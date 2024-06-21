@@ -119,6 +119,8 @@ def getDataFrames(context: SparkContext) -> DataFrame:
     return dataFrames
 
 # Execute some sparkSQL queries on the data, where mapping is not possible insert NULL values.
+# Certainly not the most optimal code, but I was also just trying out pandas for the first time
+# And playing around with the code a little.
 if __name__ == '__main__':
     spark_context = get_spark_context()
 
